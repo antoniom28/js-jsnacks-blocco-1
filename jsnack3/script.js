@@ -4,8 +4,8 @@ semplificarmi tutto, ma volevo sfidarmi a fare tutto con js! */
 let array = randoSequence(5, 25);
 document.writeln(`
 <div class="container"" >
-    <div id="rosso" class="row row-cols-5" style="background-color:red"></div>
-    <div id="verde" class="row row-cols-5" style="background-color:green"></div>
+    <div id="rosso" class="row row-cols-5" style="color:red"></div>
+    <div id="verde" class="row row-cols-5" style="color:green"></div>
 </div>
 `);
 
@@ -14,8 +14,8 @@ const verde = document.getElementById('verde');
 let applicaStile = [rosso,verde];
 
 for(let i=0; i<applicaStile.length; i++){
-    applicaStile[i].style.color = "white";
     applicaStile[i].style.margin = "10px";
+    applicaStile[i].style.backgroundColor = "whitesmoke";
 }
 
 let elemento;
@@ -34,6 +34,6 @@ for(let i=0; i<array.length; i++){
     document.getElementById(`blocco${i}`).style.width = "50px";
     document.getElementById(`blocco${i}`).style.lineHeight = "3";
     document.getElementById(`blocco${i}`).style.textAlign = "center";
-    document.getElementById(`blocco${i}`).style.backgroundColor = "skyblue";
+    document.getElementById(`blocco${i}`).style.backgroundColor = "#434d50";
     document.getElementById(`blocco${i}`).style.margin = "10px";
 }
