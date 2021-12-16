@@ -13,10 +13,9 @@ for(let i = 0; i<N; i++)
 
 /*AVEVO INTERPRETATO MALE. NON CI CREDO.... */
 document.writeln('<h4>mantiene solo l\'ultimo valore. Esercizio "giusto" secondo la traccia </h4>');
-let nUtente = parseInt(prompt('quanti array?'));
 let numeri = [];
 let index = 0;
-while(index != nUtente){
+while(index != N){
     for(let i = 0; i<10; i++)
         numeri[i] = Math.floor(Math.random()*100+1);
         document.writeln(`${index+1}° Array : ${numeri} <br><br>`);
