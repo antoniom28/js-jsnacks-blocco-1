@@ -7,6 +7,8 @@ let array = [];
 let somma = 0;
 let limite = 50;
 do{
-    somma += parseInt(prompt('inserisci un numero'));
+    let n = parseInt(prompt('inserisci un numero'));
+    array.push(n)
+    somma += n;
 }while(somma < limite);
 document.writeln(somma);
